@@ -1,0 +1,22 @@
+# Node modules
+node_modules/
+
+# Development files
+/dist/
+/.idea/
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.ts~
+*.tsx~
+*.tmp.tsx?
+*.tscache*
+*.tstmp*
+*.tsbuildinfo
+
+# VSCode
+.vscode/

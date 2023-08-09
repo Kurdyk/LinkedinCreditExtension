@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Linkedin Credit",
+    "version": "1.0",
+    "description": "Add the Linkedin account of the authors to the page",
+    "icons": {
+      "128": "Icons/128x128.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://techvox.lepodcast.fr/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "permissions": [
+        "activeTab",
+        "scripting"
+     ]
+  }

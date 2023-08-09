@@ -1,5 +1,6 @@
 import { RouteInfo } from "./type";
+import AuthorPresentation from "components/templates/authorPresentation";
 
 export const allRoutes = [
-    {name: "Auhtor presentation", path: "/author/{id}", element: undefined},
-] as RouteInfo[];
+        { name: "Author presentation", path: "/author/:authorName", element: AuthorPresentation({}) },
+    ] as RouteInfo[];

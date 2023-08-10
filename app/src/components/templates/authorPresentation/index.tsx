@@ -15,7 +15,7 @@ const AuthorPresentation : React.FC = () => {
     return (
         <Box className="AuthorPage">
             <ProfileCard {...authorInfo}/>
-            <div>Some stuff</div>
+            <Box className="Complement"></Box>
         </Box>
     )
 }

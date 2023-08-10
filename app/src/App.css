@@ -1,3 +1,6 @@
+@import "./routes/style.css";
+@import "./components/style.css";
+
 html, body, #app, #app>div {
     height: 100%;
     width: 100%;

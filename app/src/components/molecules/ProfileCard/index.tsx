@@ -7,13 +7,15 @@ import React from 'react'
 const ProfileCard : React.FC<Author> = ({name, links, avatarImgUrl, backgroundImgUrl, description}) => {
     return (
         <Box className="ProfileCard">
-            <Background backgroundImgUrl={backgroundImgUrl}/>
-            <Avatar src={avatarImgUrl}/>
-            <Box className="TextSection">
-                <Typography variant='h2'>{name}</Typography>
-                <Typography variant='body1'>{description}</Typography>
+            <Box className="BackgroundWrapper">
+                <Background backgroundImgUrl={backgroundImgUrl}/>
             </Box>
-            <LinkSection linkDescriptions={links}/>
+            <Avatar src={avatarImgUrl} className='Avatar'/>
+            <Box className="TextSection">
+                <Typography variant='h2' className='Name'>{name}</Typography>
+                <Typography variant='body1' className='Description'>{description}</Typography>
+                <LinkSection linkDescriptions={links}/>
+            </Box>
         </Box>
     )
 }

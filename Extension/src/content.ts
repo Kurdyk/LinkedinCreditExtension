@@ -1,10 +1,7 @@
-const possible_authors = ["Alexandre", "Julien", "Matthieu", "Thomas"];
+const possible_authors = ["Thomas"];
 
 const profile_map : Map<string, string> = new Map([
-    // ["Alexandre", "https://www.linkedin.com/in/alexandre-roux-9b1b0b1a3/"],
-    // ["Julien", "https://www.linkedin.com/in/julien-roux-9b1b0b1a3/"],
-    // ["Matthieu", "https://www.linkedin.com/in/louis-kurdyk-a64034240"],
-    // ["Thomas", "https://www.linkedin.com/in/thomas-gicquel/"]
+    ["Thomas", "http://localhost:3000/author/thomas"],
 ]);
 
 const content_sections = document.getElementsByClassName("post-content");
@@ -18,9 +15,8 @@ for (let i = 0; i < content_sections.length; i++) {
         const iframe = document.createElement("iframe");
         iframe.src = profile_map.get(name)!;
         iframe.width = "100%";
-        iframe.sandbox.add();
+        iframe.sandbox.add("allow-scripts");
         iframe.height = "100%";
-        iframe.style.border = "none";
         authors_section.appendChild(iframe);
     });
 

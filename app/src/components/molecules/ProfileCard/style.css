@@ -1,6 +1,6 @@
 .ProfileCard {
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 90%;
     background-color: aliceblue;
     border-radius: 1rem;
 }
@@ -15,7 +15,7 @@
     width: 150px !important;
     z-index: 1;
     position: relative !important;
-    bottom: 15%;
+    bottom: 10%;
 }
 
 .TextSection {
@@ -37,13 +37,11 @@
 }
 
 .Information {
-    position : relative;
-    bottom : 25%;
     display: flex;
 }
 
 .Description {
-    width: 80%;
+    width: 100%;
     text-indent: 5%;
     text-align: justify;
 }
@@ -54,4 +52,27 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+@media all and (max-height: 640px) {
+
+    .BackgroundWrapper {
+        display: none;
+    }
+
+    .Avatar {
+        position: absolute !important;
+        height: 60px !important;
+        width: 60px !important;
+        top : 2%;
+        left: 6%;
+    }
+
+    .Name {
+        font-size: 3rem !important;
+    }
+
+    .Description {
+        font-size: 0.9rem !important;
+    }
 }
